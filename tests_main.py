@@ -22,5 +22,5 @@ def test_login(browser, link, fixure2):
    # page.accept_cookies()
    # page.sign_up()
     print(fixure2)
-   # print(username)kkk
+   # print(username)kkkjj
    # page.login("a.chetyrbok+11@gmail.com")
