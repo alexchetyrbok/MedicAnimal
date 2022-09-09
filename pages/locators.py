@@ -13,3 +13,16 @@ class LoginPageLocators():
     passwordLogin = (By.ID, "password")
     loginAndCheckoutButton = (By.ID, "loginAndCheckoutButton")
     recapcha = (By.CLASS_NAME, "recaptcha-checkbox-border")
+
+class MyAccountPageLocators():
+    WelcomeHeading = (By.CLASS_NAME, "welcome")
+
+class ProductListingPageLocators():
+
+    Productcard = (By.CSS_SELECTOR, "li[class ^=""product-item""]")
+
+class ProducDetailsPageLocators():
+        FrequencyDropLocator = (By.ID, "repeatFrequency")
+        AddToCartLocator = (By.ID, "addToCartButton")
+        isRepeatFrequency = (By.ID, "regular-option")
+        oneTime = (By.ID, "one-time-option")

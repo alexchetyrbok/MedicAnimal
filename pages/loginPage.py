@@ -1,10 +1,5 @@
-import random
 import time
-
-import pytest
-
 from .basePage import BasePage
-from selenium.webdriver.common.by import By
 from pages.locators import LoginPageLocators
 
 
@@ -13,6 +8,7 @@ class LoginPage(BasePage):
     def login(self, user_id):
         self.send_keys_to_editbox(LoginPageLocators.validateEmail, user_id, "Email")
         self.click_button(LoginPageLocators.validateEmailButton, "Continue")
+        time.sleep(1)
         self.send_keys_to_editbox(LoginPageLocators.passwordLogin, "AChetyrbok12", "Password")
         self.click_button(LoginPageLocators.loginAndCheckoutButton, "Sign In")
 
